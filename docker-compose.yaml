@@ -6,12 +6,8 @@ services:
         build:
             context: ./nodejs
             target: debug
-#        working_dir: /work
-#        entrypoint: /bin/sh
-#        stdin_open: true
-#        tty: true
         volumes: 
-        - ./nodejs/src/:/work/src/
+        - ./nodejs/src/:/work/
         ports:
             - 5000:5000
             - 9229:9229

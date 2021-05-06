@@ -6,9 +6,9 @@ COPY ./src/package.json /work/package.json
 RUN npm install
 RUN npm install -g nodemon
 
-COPY ./src/ /work/src/
+COPY ./src/ /work/
 
-ENTRYPOINT [ "nodemon", "--inspect=0.0.0.0", "./src/server.js" ]
+ENTRYPOINT [ "nodemon", "--inspect=0.0.0.0", "./server.js" ]
 
 ####################
 

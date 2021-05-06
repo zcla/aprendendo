@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "nodejs",
+            "name": "Attach: nodejs",
             "type": "node",
             "request": "attach",
-            "remoteRoot": "/work/src/",
+            "remoteRoot": "/work/",
             "port": 9229,
             "address": "localhost",
             "localRoot": "${workspaceFolder}/nodejs/src/",

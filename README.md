@@ -2,10 +2,14 @@
 
 Projeto piloto do Zé, pra ver se ele aprende dessa vez... :/
 
-# Situação atual
+## nodejs
 
-* `docker-compose up -d`
+* Construir imagem:
+  * Desenvolvimento: `docker-compose build`
+  * Produção: `docker-compose --file ./docker-compose.prod.yaml build`
 
-* Debugar usando `nodejs`
+* `docker-compose up`
+
+* Debugar usando `Attach: nodejs`
 
 * Acessar http://localhost:5000/
