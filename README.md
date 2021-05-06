@@ -4,8 +4,10 @@ Projeto piloto do Zé, pra ver se ele aprende dessa vez... :/
 
 # Situação atual
 
-Consigo entrar no container usando
+* Entrar no container usando `docker exec -it nodejs sh`
 
-```
-docker run -it -v ${PWD}:/work -w /work zeclaudio/nodejs:1.0.0 /bin/sh
-```
+* Instalar usando `npm install`
+
+* Rodar usando `npm start`
+
+* Acessar http://localhost:5000/
