@@ -5,11 +5,11 @@ services:
         image: zeclaudio/nodejs:1.0.0
         build:
             context: ./nodejs
-            target: dev
-        working_dir: /work
-        entrypoint: /bin/sh
-        stdin_open: true
-        tty: true
+            target: prod
+#        working_dir: /work
+#        entrypoint: /bin/sh
+#        stdin_open: true
+#        tty: true
         volumes: 
         - ./nodejs/src/:/work
         ports:
