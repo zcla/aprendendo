@@ -1,13 +1,19 @@
 version: "3.4"
-services: 
+services:
+    csharp:
+        container_name: csharp
+        image: zeclaudio/csharp:1.0.0
+        build: ./csharp
+    golang:
+        container_name: golang
+        image: zeclaudio/golang:1.0.0
+        build: ./golang
     nodejs:
         container_name: nodejs
         image: zeclaudio/nodejs:1.0.0
-        build:
-            context: ./nodejs
-            target: debug
-        volumes: 
-        - ./nodejs/src/:/work/
-        ports:
-            - 5000:5000
-            - 9229:9229
+        build: ./nodejs
+    python:
+        container_name: python
+        image: zeclaudio/python:1.0.0
+        build: ./python
+ 

@@ -1,24 +1,25 @@
-FROM node:current-alpine as install
+FROM node:current-alpine
+#  as install
 
-WORKDIR /work/
+# WORKDIR /work/
 
-COPY ./src/package.json /work/package.json
-RUN npm install
+# COPY ./src/package.json /work/package.json
+# RUN npm install
 
-####################
+# ####################
 
-FROM install as debug
+# FROM install as debug
 
-RUN npm install -g nodemon
+# RUN npm install -g nodemon
 
-COPY ./src/ /work/
+# COPY ./src/ /work/
 
-ENTRYPOINT [ "nodemon", "--inspect=0.0.0.0", "./server.js" ]
+# ENTRYPOINT [ "nodemon", "--inspect=0.0.0.0", "./server.js" ]
 
-####################
+# ####################
 
-FROM install as prod
+# FROM install as prod
 
-COPY ./src/ /work/
+# COPY ./src/ /work/
 
-CMD node .
+# CMD node .
