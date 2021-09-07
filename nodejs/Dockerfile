@@ -1,25 +1,2 @@
-FROM node:current-alpine
-#  as install
-
-# WORKDIR /work/
-
-# COPY ./src/package.json /work/package.json
-# RUN npm install
-
-# ####################
-
-# FROM install as debug
-
-# RUN npm install -g nodemon
-
-# COPY ./src/ /work/
-
-# ENTRYPOINT [ "nodemon", "--inspect=0.0.0.0", "./server.js" ]
-
-# ####################
-
-# FROM install as prod
-
-# COPY ./src/ /work/
-
-# CMD node .
+# https://hub.docker.com/_/node (16.8.0-alpine3.13)
+FROM node:alpine
