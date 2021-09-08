@@ -6,6 +6,7 @@ Seguindo o tutorial do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V
 
 * [Docker development guide #1](https://www.youtube.com/watch?v=wyjNpxLRmLg)
 * [Docker development guide #2](https://www.youtube.com/watch?v=EdmKENqnQUw)
+* [Docker development guide #3 (Multistage)](https://www.youtube.com/watch?v=2lQ7WrwpZfI)
 
 ## Para rodar
 
@@ -14,7 +15,8 @@ Seguindo o tutorial do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V
 
 * `docker-compose up`
 
-* Acessar http://localhost:5010/ (csharp)
-* Acessar http://localhost:5020/ (golang)
-* Acessar http://localhost:5030/ (nodejs)
-* Acessar http://localhost:5040/ (python)
+* Acessar:
+  * http://localhost:5010/ (csharp)
+  * http://localhost:5020/ (golang)
+  * http://localhost:5030/ (nodejs)
+  * http://localhost:5040/ (python)

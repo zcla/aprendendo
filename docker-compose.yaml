@@ -1,51 +1,37 @@
 version: "3.4"
 services:
-    csharp: # docker run -it -v ${PWD}:/work -w /work -p 5010:5000 zeclaudio/csharp:1.0.0 /bin/sh
+    csharp:
         container_name: csharp
         image: zeclaudio/csharp:1.0.0
-        build: ./csharp
-        working_dir: /work
-        entrypoint: /bin/sh
-        stdin_open: true
-        tty: true
-        volumes: 
-            - ./csharp/src:/work
+        build:
+            context: ./csharp
         ports:
             - 5010:5000
-    golang:
-        container_name: golang
-        image: zeclaudio/golang:1.0.0
-        build: ./golang
-        working_dir: /work
-        entrypoint: /bin/sh
-        stdin_open: true
-        tty: true
-        volumes: 
-            - ./golang/src:/work
-        ports:
-            - 5020:5000
-    nodejs:
-        container_name: nodejs
-        image: zeclaudio/nodejs:1.0.0
-        build: ./nodejs
-        working_dir: /work
-        entrypoint: /bin/sh
-        stdin_open: true
-        tty: true
-        volumes: 
-            - ./nodejs/src:/work
-        ports:
-            - 5030:5000
-    python:
-        container_name: python
-        image: zeclaudio/python:1.0.0
-        build: ./python
-        working_dir: /work
-        entrypoint: /bin/sh
-        stdin_open: true
-        tty: true
-        volumes: 
-            - ./python/src:/work
-        ports:
-            - 5040:5000
+    # golang:
+    #     container_name: golang
+    #     image: zeclaudio/golang:1.0.0
+    #     build:
+    #         context: ./golang
+    #     volumes: 
+    #         - ./golang/src:/work
+    #     ports:
+    #         - 5020:5000
+    # nodejs:
+    #     container_name: nodejs
+    #     image: zeclaudio/nodejs:1.0.0
+    #     build:
+    #         context: ./nodejs
+    #     volumes: 
+    #         - ./nodejs/src:/work
+    #     ports:
+    #         - 5030:5000
+    # python:
+    #     container_name: python
+    #     image: zeclaudio/python:1.0.0
+    #     build:
+    #         context: ./python
+    #     volumes: 
+    #         - ./python/src:/work
+    #     ports:
+    #         - 5040:5000
  

@@ -1,0 +1,33 @@
+version: "3.4"
+services:
+    csharp:
+        build:
+            target: build
+        working_dir: /work
+        entrypoint: /bin/sh
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./csharp/src:/work
+    # golang:
+    #     build:
+    #         target: build
+    #     working_dir: /work
+    #     entrypoint: /bin/sh
+    #     stdin_open: true
+    #     tty: true
+    # nodejs:
+    #     build:
+    #         target: build
+    #     working_dir: /work
+    #     entrypoint: /bin/sh
+    #     stdin_open: true
+    #     tty: true
+    # python:
+    #     build:
+    #         target: build
+    #     working_dir: /work
+    #     entrypoint: /bin/sh
+    #     stdin_open: true
+    #     tty: true
+ 
