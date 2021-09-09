@@ -2,21 +2,24 @@
 
 Projeto piloto do Zé, pra ver se ele aprende dessa vez... :/
 
-Seguindo o tutorial do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V_rN9nLqVNiI8Yof3w):
+Ponto de entrada: http://localhost:5000/
 
-* [Docker development guide #1](https://www.youtube.com/watch?v=wyjNpxLRmLg)
-* [Docker development guide #2](https://www.youtube.com/watch?v=EdmKENqnQUw)
-* [Docker development guide #3 (Multistage)](https://www.youtube.com/watch?v=2lQ7WrwpZfI)
+Seguindo os vídeos do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V_rN9nLqVNiI8Yof3w):
 
-## Para rodar
+|Vídeo|csharp|golang|nginx|nodejs|python|
+|---|:---:|:---:|:---:|:---:|:---:|
+|2019-02-24 [Coding my UI \| my first microservice \| part 1](https://www.youtube.com/watch?v=6Abmaysrjd4)|||X|||
+|2019-06-16 [Docker development guide #1](https://www.youtube.com/watch?v=wyjNpxLRmLg)|X|X||X|X|
+|2019-06-20 [Docker development guide #2](https://www.youtube.com/watch?v=EdmKENqnQUw)|X|X||X|X|
+|2019-06-30 [Docker development guide #3 (Multistage)](https://www.youtube.com/watch?v=2lQ7WrwpZfI)|X|X||X|X|
 
-* Construir imagem:
-  * Desenvolvimento: `docker-compose build`
+## Scripts
 
-* `docker-compose up`
+* `build-build.sh`: roda os scaffolders necessários para criar os projetos do zero (só o csharp precisa, no momento).
+* `dev-run.sh`: roda os containers em modo de desenvolvimento.
+* `prod-run.sh`: roda os containers em modo de produção.
 
-* Acessar:
-  * http://localhost:5010/ (csharp)
-  * http://localhost:5020/ (golang)
-  * http://localhost:5030/ (nodejs)
-  * http://localhost:5040/ (python)
+## Troubleshooting
+
+* Erro `ERROR [internal] load metadata for docker.io/library/nginx:alpine` ao rodar docker:
+  * `rm ~/.docker/config.json`
