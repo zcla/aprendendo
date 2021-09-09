@@ -7,7 +7,7 @@ Ponto de entrada: http://localhost:5000/
 Seguindo os vídeos do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V_rN9nLqVNiI8Yof3w):
 
 |Vídeo|csharp|golang|nginx|nodejs|python|
-|---|:---:|:---:|:---:|:---:|:---:|
+|-|:-:|:-:|:-:|:-:|:-:|
 |2019-02-24 [Coding my UI \| my first microservice \| part 1](https://www.youtube.com/watch?v=6Abmaysrjd4)|||X|||
 |2019-06-16 [Docker development guide #1](https://www.youtube.com/watch?v=wyjNpxLRmLg)|X|X||X|X|
 |2019-06-20 [Docker development guide #2](https://www.youtube.com/watch?v=EdmKENqnQUw)|X|X||X|X|

@@ -4,9 +4,7 @@ services:
         build:
             target: build
         working_dir: /work
-        entrypoint: /bin/sh
         stdin_open: true
-        tty: true
         volumes:
             - ./csharp/src:/work
     # golang:
