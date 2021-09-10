@@ -21,15 +21,13 @@ services:
             context: ./golang
         ports:
             - 5020:5000
-    # nodejs:
-    #     container_name: nodejs
-    #     image: zeclaudio/nodejs:1.0.0
-    #     build:
-    #         context: ./nodejs
-    #     volumes: 
-    #         - ./nodejs/src:/work
-    #     ports:
-    #         - 5030:5000
+    nodejs:
+        container_name: nodejs
+        image: zeclaudio/nodejs:1.0.0
+        build:
+            context: ./nodejs
+        ports:
+            - 5030:5000
     # python:
     #     container_name: python
     #     image: zeclaudio/python:1.0.0

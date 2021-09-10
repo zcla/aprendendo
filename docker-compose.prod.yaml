@@ -3,25 +3,13 @@ services:
     csharp:
         build:
             target: prod
-    # golang:
-    #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
-    # nodejs:
-    #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
+    golang:
+        build:
+            target: prod
+    nodejs:
+        build:
+            target: prod
     # python:
     #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
+    #         target: prod
  

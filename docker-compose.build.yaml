@@ -7,13 +7,6 @@ services:
         stdin_open: true
         volumes:
             - ./csharp/src:/work
-    # nodejs:
-    #     build:
-    #         target: build
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
     # python:
     #     build:
     #         target: build

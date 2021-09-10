@@ -17,13 +17,14 @@ services:
         tty: true
         volumes:
             - ./golang/src:/work
-    # nodejs:
-    #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
+    nodejs:
+        build:
+            target: dev
+        working_dir: /work
+        stdin_open: true
+        tty: true
+        volumes: 
+            - ./nodejs/src:/work
     # python:
     #     build:
     #         target: dev
