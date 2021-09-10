@@ -28,13 +28,11 @@ services:
             context: ./nodejs
         ports:
             - 5030:5000
-    # python:
-    #     container_name: python
-    #     image: zeclaudio/python:1.0.0
-    #     build:
-    #         context: ./python
-    #     volumes: 
-    #         - ./python/src:/work
-    #     ports:
-    #         - 5040:5000
+    python:
+        container_name: python
+        image: zeclaudio/python:1.0.0
+        build:
+            context: ./python
+        ports:
+            - 5040:5000
  

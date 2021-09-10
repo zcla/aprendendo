@@ -10,7 +10,7 @@ import (
 var searchMock []byte
 
 func Response(ctx *fasthttp.RequestCtx) {
-	fmt.Fprint(ctx, "Hello (golang)")
+	fmt.Fprint(ctx, "Hello world (golang)")
 }
 
 func main() {

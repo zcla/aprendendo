@@ -25,11 +25,11 @@ services:
         tty: true
         volumes: 
             - ./nodejs/src:/work
-    # python:
-    #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
- 
+    python:
+        build:
+            target: dev
+        working_dir: /work
+        stdin_open: true
+        tty: true
+        volumes: 
+            - ./python/src:/work

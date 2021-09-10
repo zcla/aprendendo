@@ -9,7 +9,6 @@ services:
     nodejs:
         build:
             target: prod
-    # python:
-    #     build:
-    #         target: prod
- 
+    python:
+        build:
+            target: prod
