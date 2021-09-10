@@ -14,15 +14,13 @@ services:
             context: ./csharp
         ports:
             - 5010:5000
-    # golang:
-    #     container_name: golang
-    #     image: zeclaudio/golang:1.0.0
-    #     build:
-    #         context: ./golang
-    #     volumes: 
-    #         - ./golang/src:/work
-    #     ports:
-    #         - 5020:5000
+    golang:
+        container_name: golang
+        image: zeclaudio/golang:1.0.0
+        build:
+            context: ./golang
+        ports:
+            - 5020:5000
     # nodejs:
     #     container_name: nodejs
     #     image: zeclaudio/nodejs:1.0.0

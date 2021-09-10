@@ -9,13 +9,14 @@ services:
         tty: true
         volumes:
             - ./csharp/src:/work
-    # golang:
-    #     build:
-    #         target: dev
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
+    golang:
+        build:
+            target: dev
+        working_dir: /work
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./golang/src:/work
     # nodejs:
     #     build:
     #         target: dev
