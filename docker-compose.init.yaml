@@ -12,3 +12,5 @@ services:
             target: init
         stdin_open: true
         tty: true
+        volumes: 
+            - ./python/src:/work/init

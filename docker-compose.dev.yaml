@@ -31,4 +31,4 @@ services:
         stdin_open: true
         tty: true
         volumes: 
-            - ./python/src:/work
+            - ./python/src:/work/dev
