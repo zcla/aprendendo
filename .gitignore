@@ -1,5 +1,10 @@
+# csharp
 csharp/src/bin/
 csharp/src/obj/
+
+# nodejs
 nodejs/src/node_modules/
 nodejs/src/package-lock.json
+
+# python
 python/src/__pycache__/

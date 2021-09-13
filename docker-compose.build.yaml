@@ -1,15 +1,15 @@
 version: "3.4"
 services:
-    csharp:
-        build:
-            target: build
-        working_dir: /work
-        stdin_open: true
-        volumes:
-            - ./csharp/src:/work
-    # python:
+    # csharp:
     #     build:
     #         target: build
+    #     working_dir: /work
+    #     stdin_open: true
+    #     volumes:
+    #         - ./csharp/src:/work
+    python:
+        build:
+            target: build
     #     working_dir: /work
     #     entrypoint: /bin/sh
     #     stdin_open: true

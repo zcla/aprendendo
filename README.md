@@ -2,6 +2,8 @@
 
 Projeto piloto do Zé, pra ver se ele aprende dessa vez... :/
 
+Os projetos `csharp`, `golang` e `nodejs` estão incompletos e foram deixados temporariamente de lado para focar mais no projeto `python`, mais urgente.
+
 Ponto de entrada: http://localhost:5000/
 
 Seguindo os vídeos do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V_rN9nLqVNiI8Yof3w):
@@ -15,7 +17,7 @@ Seguindo os vídeos do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V
 
 ## Scripts
 
-* `build-build.sh`: roda os scaffolders necessários para criar os projetos do zero (só o csharp precisa, no momento).
+* `build-build.sh`: roda os scaffolders necessários para criar os projetos do zero.
 * `dev-run.sh`: roda os containers em modo de desenvolvimento.
 * `prod-run.sh`: roda os containers em modo de produção.
 

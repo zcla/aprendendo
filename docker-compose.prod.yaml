@@ -1,14 +1,14 @@
 version: "3.4"
 services:
-    csharp:
-        build:
-            target: prod
-    golang:
-        build:
-            target: prod
-    nodejs:
-        build:
-            target: prod
+    # csharp:
+    #     build:
+    #         target: prod
+    # golang:
+    #     build:
+    #         target: prod
+    # nodejs:
+    #     build:
+    #         target: prod
     python:
         build:
             target: prod
