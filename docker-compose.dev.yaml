@@ -28,7 +28,6 @@ services:
     python:
         build:
             target: dev
-        working_dir: /work
         stdin_open: true
         tty: true
         volumes: 
