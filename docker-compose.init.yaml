@@ -9,9 +9,6 @@ services:
     #         - ./csharp/src:/work
     python:
         build:
-            target: build
-    #     working_dir: /work
-    #     entrypoint: /bin/sh
-    #     stdin_open: true
-    #     tty: true
- 
+            target: init
+        stdin_open: true
+        tty: true

@@ -17,7 +17,7 @@ Seguindo os vídeos do [That DevOps Guy](https://www.youtube.com/channel/UCFe9-V
 
 ## Scripts
 
-* `build-build.sh`: roda os scaffolders necessários para criar os projetos do zero.
+* `init-init.sh`: roda os scaffolders necessários para criar os projetos do zero.
 * `dev-run.sh`: roda os containers em modo de desenvolvimento.
 * `prod-run.sh`: roda os containers em modo de produção.
 
