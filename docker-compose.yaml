@@ -1,5 +1,7 @@
 version: "3.4"
+
 services:
+    # Proxy
     nginx:
         container_name: nginx
         image: zeclaudio/nginx:1.0.0
@@ -7,6 +9,8 @@ services:
             context: ./nginx
         ports:
             - 5000:80
+
+    # Linguagens de programação
     # csharp:
     #     container_name: csharp
     #     image: zeclaudio/csharp:1.0.0
@@ -35,4 +39,24 @@ services:
             context: ./python
         ports:
             - 5040:5000
+
+    # Bancos de dados
+    adminer:
+        container_name: adminer
+        build:
+            context: ./adminer
+#        restart: always
+        ports:
+            - 4000:8080
+    mysql:
+        container_name: mysql
+        image: zeclaudio/mysql:1.0.0
+        build:
+            context: ./mysql
+        ports:
+            - 4010:3306
+        command: --default-authentication-plugin=mysql_native_password
+#        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: example
  

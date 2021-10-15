@@ -7,6 +7,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <style>
       main {
+        height: 83%; /* Gambiarra pro iframe encher a tela; com um JS dá pra ficar mais exato */
         margin-top: 56px;
       }
     </style>
@@ -21,20 +22,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <!-- TODO Aprender a fazer o redirecionamento dentro do NGinx -->
-              <!--
-              <li class="nav-item">
-                <a class="nav-link" href="http://localhost:5010" target="conteudo">C#</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinguagens" role="button" data-bs-toggle="dropdown" aria-expanded="false">Linguagens</a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownLinguagens">
+                  <li><a class="nav-link" href="/python" target="conteudo">Python</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://localhost:5020" target="conteudo">Go</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://localhost:5030" target="conteudo">Node.js</a>
-              </li>
-              -->
-              <li class="nav-item">
-                <a class="nav-link" href="/python" target="conteudo">Python</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBancos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bancos</a>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownBancos">
+                  <li><a class="nav-link" href="/adminer?server=192.168.0.15%3A4010&username=root" target="conteudo">MySQL</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -42,8 +40,8 @@
       </nav>
     </header>
     <main class="flex-shrink-0">
-      <div class="container-fluid" style="height:100%;">
-        <iframe name="conteudo" seamless="" height="100%" width="100%"></iframe>
+      <div class="container-fluid">
+        <iframe name="conteudo" frameborder="0" height="100%" width="100%"></iframe>
       </div>
     </main>
     <footer class="footer mt-auto py-3 bg-light">
